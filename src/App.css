@@ -1,0 +1,61 @@
+.users_container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form_container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0002;
+    backdrop-filter: blur(2px);
+    position: fixed ;
+    top: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.disable_form {
+    display: none;
+    
+}
+
+.App_container_title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    max-width: 100%;
+    
+
+}
+
+.App_btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 5px;
+    background-color: #555A88;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: transform 150ms ease;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.App_btn:hover {
+transform: scale(1.02);
+box-shadow: 0 0 8px rgb(10, 4, 31);
+transition: transform 150ms ease;
+}
+
+
