@@ -97,7 +97,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
       </div>
       {/*------------------------------------------First Name----------------------------------------*/}
       <div className='user_full_name'>
-        <i class="fa-solid fa-user icon_user"></i>
+        <i className="fa-solid fa-user icon_user"></i>
         <div>
           <div className='edit_user'>
             <h2 className={buttonStatus == 1 ? 'name_hide' : 'name_user'}>{`${user.first_name}`}</h2>
@@ -127,7 +127,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
       <ul className='user_list'>
         {/*------------------------------------------Email----------------------------------------*/}
         <div className='user_full_email'>
-          <i class="fa-solid fa-envelope icon_email"></i>
+          <i className="fa-solid fa-envelope icon_email"></i>
           <li className='edit_email'>
             <div className='div_email'>
               <span className='user_span'>Email</span>
@@ -145,7 +145,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
         </div>
         {/*------------------------------------------Birthday----------------------------------------*/}
         <div className='user_full_birthday'>
-        <i class="fa-solid fa-cake-candles icon_birthday"></i>
+        <i className="fa-solid fa-cake-candles icon_birthday"></i>
           <li className='birthday_div'>
             <div className='edit_birthday'>
               <span className='user_span'>Birthdate</span>
@@ -166,7 +166,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
           <i className="fa-regular fa-trash-can user_trash"></i>
         </button>
         <button className='user_btn' onClick={handleEdit}>
-          <i class="fa-solid fa-user-pen"></i>
+          <i className="fa-solid fa-user-pen"></i>
 
         </button>
 
