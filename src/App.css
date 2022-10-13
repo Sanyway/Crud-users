@@ -1,8 +1,21 @@
+
+.App{
+    height: 100vh;
+    background-color: #8257c7;
+}
+
 .users_container {
     display: flex;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    font-size: 12px;
+    background-image: url('https://img.freepik.com/free-vector/realistic-style-soap-bubbles-background_52683-44371.jpg?w=1380&t=st=1665654704~exp=1665655304~hmac=beeef9d175e3453161aa738f750f35dccf68faab7d482517a589ad902e14f02e');
+    background-size:cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height: 600px;
+
 }
 
 .form_container {
@@ -18,6 +31,7 @@
     padding-left: 20px;
     padding-right: 20px;
     z-index: 1;
+    
 }
 
 .disable_form {
@@ -31,11 +45,16 @@
     gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    padding-top: 40px;
+    margin-bottom: 10px;
     padding-bottom: 30px;
     max-width: 100%;
-    
+
+}
+
+.App_title {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
 
 }
 
@@ -43,13 +62,14 @@
     width: 100%;
     max-width: 200px;
     padding: 5px;
-    background-color: #555A88;
+    background-color: #3141d1;
     color: white;
     cursor: pointer;
-    border: none;
+    border: 1px solid rgb(255, 255, 255);
     transition: transform 150ms ease;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
+    
 }
 
 .App_btn:hover {

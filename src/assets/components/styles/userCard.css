@@ -1,11 +1,11 @@
 .user {
-    background-color: white;
+    background-color: rgb(227, 217, 235);
     padding: 20px;
     border: 1px solid #cc9;
     border-radius: 8px;
     width: 100%;
     max-width: 400px;
-    height: 235px;
+    height: 280px;
 
 }
 
@@ -37,15 +37,15 @@
 }
 
 .delete_name {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
 
-.delete_buttons{
+.delete_buttons {
     display: flex;
-    gap:15px;
+    gap: 15px;
 }
 
 .delete_buttons button {
@@ -58,7 +58,7 @@
 }
 
 .yes_button:hover {
-    
+
     background-color: green;
     color: white;
     cursor: pointer;
@@ -83,40 +83,324 @@
 
 }
 
+.user_full_name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.icon_user {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.user_full_email {
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon_email {
+font-size: 25px;
+margin-right: 25px;
+}
+
+.user_full_birthday {
+    display: flex;
+    align-items: center;
+    
+}
+
+.icon_birthday {
+font-size: 25px;
+margin-right: 25px;
+margin-top: 8px;
+}
+
+
+/*----------------Model Name--------------------*/
+
+.edit_user {
+    width: 315px;
+    margin-top: 5px;
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.name_hide,
+.name_edit_hide,
+.name_update_hide,
+.edit_hide {
+    display: none;
+}
+
+.name_single_form {
+    height: 25px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_update_button {
+    margin-top: 5px;
+    height: 20px;
+    width: 50px;
+    opacity: 0.4;
+    
+}
+
+.name_edit_button {
+    margin-top: 5px;
+    height: 20px;
+    font-size: 18px;
+    width: 30px;
+    opacity: 0.15;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+.name_update_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.name_edit_button:hover {
+    cursor: pointer;
+    opacity: 0.55;
+    transform: scale(1.1);
+}
+
+/*----------------Model Last--------------------*/
+
+.edit_last{
+    margin-top: 5px;
+    width: 315px;
+    height: 25px;
+    justify-content: space-between;
+    display: flex;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.last_single_form {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.last_hide,
+.last_edit_hide,
+.last_update_hide,
+.name_edit_hide {
+    display: none;
+}
+
+
+.last_update_button {
+    margin-top: 5px;
+    height: 20px;
+    width: 50px;
+    opacity: 0.4;
+}
+
+.last_edit_button {
+    margin-top: 5px;
+    height: 20px;
+    font-size: 18px;
+    width: 30px;
+    opacity: 0.15;
+    margin-right: 5px;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+
+.last_update_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.last_edit_button:hover {
+    cursor: pointer;
+    opacity: 0.55;
+    transform: scale(1.1);
+}
+
+/*----------------Model Email--------------------*/
+
+.edit_email{
+    width: 310px;
+    margin-top: 5px;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 30px;
+
+}
+
+.email_single_form {
+display: flex;
+justify-content: space-between;
+width: 315px;
+}
 .user_list {
     display: grid;
     gap: 12px;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #ccc9;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.user_item {
+
+.email_hide,
+.email_edit_hide,
+.email_update_hide,
+.name_edit_hide {
+    display: none;
+}
+
+.div_email {
+    width: 240px;
+}
+.email_name {
+    width: 200px;
+}
+
+.email_form_edit {
+    width: 150px;
+}
+
+.email_update_button {
+    margin-top: 5px;
+    height: 20px;
+    width: 50px;
+    opacity: 0.4;
+}
+
+.email_edit_button {
+    margin-top: 5px;
+    height: 20px;
+    font-size: 18px;
+    width: 30px;
+    opacity: 0.15;
+    margin-right: 3px;
+    background-color: transparent;
+    border: none;
+    
+    
+    
+}
+
+
+.email_update_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.email_edit_button:hover {
+    cursor: pointer;
+    opacity: 0.55;
+    transform: scale(1.1);
+}
+
+/*----------------Model Birthday--------------------*/
+
+.edit_birthday{
+    margin-top: 5px;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     gap: 2px;
-    font-weight: 400;
+    margin-top: 20px;
+    width: 320px;
+    position: relative;
 }
 
-.edit_user {
+.birthday_div {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center; 
+    width: 318px
+    
 }
 
-.name_hide, .input_hide, .update_hide, .edit_hide {
-display: none;
+.birthday_form_edit {
+height: fit-content;
+justify-self: center;
+
 }
+
+.birthday_hide,
+.birthday_edit_hide,
+.birthday_update_hide,
+.name_edit_hide {
+    display: none;
+}
+
+
+.birthday_single_form {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+.birthday_update_button {
+    height: 20px;
+    width: 50px;
+    opacity: 0.4;
+}
+
+
+.birthday_edit_button {
+    margin-top: 5px;
+    height: 20px;
+    font-size: 18px;
+    width: 30px;
+    opacity: 0.15;
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    
+}
+
+
+.birthday_update_button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.birthday_edit_button:hover {
+    cursor: pointer;
+    opacity: 0.55;
+    transform: scale(1.1);
+}
+
+/*-----------------------------*/
+
+
+
+
 .user_span {
     color: #aaa;
     font-weight: 300;
     text-transform: uppercase;
+    font-size: 18px;
 }
 
-.user_item-container {
-    display: flex;
-    gap: 8px;
-
-}
 
 .user_footer {
     display: flex;
@@ -126,17 +410,21 @@ display: none;
 
 .user_btn {
     color: white;
-    width: 35px;
+    width: 42px;
     aspect-ratio: 1;
     border-radius: 8px;
+    font-size: 20px;
+    background-color: #d6aaeb;
 }
+
+
 
 .user_btn:first-child {
     background-color: #D85D5D;
     border: none;
     color: white;
     right: 65px;
-    
+
 }
 
 

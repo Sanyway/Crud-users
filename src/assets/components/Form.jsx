@@ -33,6 +33,7 @@ const Form = ({ createNewUser, updateInfo, setUpdateInfo, updateUserById, setFor
         setFormIsOpen(true)
         reset(defaultValues)
         setUpdateInfo()
+       
     }
 
     const handleFormIsClosed = () => {

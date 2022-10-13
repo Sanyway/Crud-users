@@ -4,13 +4,14 @@ import './App.css'
 import Form from './assets/components/Form'
 import UserCard from './assets/components/UserCard'
 
-const baseURL = 'https://users-crud1.herokuapp.com'
+const baseURL = 'http://144.126.218.162:9000'
 
 function App() {
 
   const [users, setUsers] = useState()
   const [updateInfo, setUpdateInfo] = useState()
   const [formIsOpen, setFormIsOpen] = useState(true)
+  const [stopProps, setStopProps] = useState(false)
   
   
 
@@ -71,10 +72,14 @@ function App() {
     setUpdateInfo()
   }
 
+  const stopLi= () => {
+    setStopProps(false)
+    console.log(stopProps)
+}
 
   console.log(updateInfo)
   return (
-    <div className="App">
+    <div className="App" onClick={stopLi}>
       <div className='App_container_title'>
         <h1 className='App_title'>Users CRUD</h1>
         <button onClick={handleOpenForm} className='App_btn'>Create a new user</button>
@@ -98,8 +103,13 @@ function App() {
               setUpdateInfo={setUpdateInfo}
               setFormIsOpen={setFormIsOpen}
               updateUserById={updateUserById}
+              updateInfo={updateInfo}
+              setStopProps={setStopProps}
               key={user.id}
-              user={user} />
+              user={user} 
+              stopLi={stopLi}
+              stopProps={stopProps}
+              />
           ))
 
         }
