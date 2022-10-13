@@ -86,7 +86,7 @@
 .user_full_name {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    
 
 }
 
@@ -98,6 +98,11 @@
 .user_full_email {
     display: flex;
     align-items: center;
+    
+}
+
+.last_name {
+    width: 300px;
     
 }
 
@@ -122,11 +127,10 @@ margin-top: 8px;
 /*----------------Model Name--------------------*/
 
 .edit_user {
-    width: 315px;
+    width: 317px;
     margin-top: 5px;
     height: 25px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 5px;
     text-transform: uppercase;
@@ -162,9 +166,10 @@ margin-top: 8px;
     font-size: 18px;
     width: 30px;
     opacity: 0.15;
-    margin-right: 10px;
+    margin-right: 11px;
     background-color: transparent;
     border: none;
+
 }
 
 
@@ -199,6 +204,12 @@ margin-top: 8px;
     justify-content: space-between;
     width: 320px;
 }
+
+.last_name {
+    display: flex;
+    flex-direction: row;
+
+}
 .last_hide,
 .last_edit_hide,
 .last_update_hide,
@@ -222,7 +233,7 @@ margin-top: 8px;
     font-size: 18px;
     width: 30px;
     opacity: 0.15;
-    margin-right: 15px;
+    right: 33px;
     background-color: transparent;
     border: none;
     position: relative;
@@ -250,6 +261,7 @@ margin-top: 8px;
     align-items: center;
     display: flex;
     height: 30px;
+    font-size: 10px;
 
 }
 
@@ -279,7 +291,7 @@ width: 315px;
     width: 240px;
 }
 .email_name {
-    width: 200px;
+    width: 150px;
 }
 
 .email_form_edit {
@@ -336,14 +348,14 @@ width: 315px;
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    width: 318px
+    width: 318px;
+    margin-bottom: 10px;
     
 }
 
 .birthday_form_edit {
 height: fit-content;
 justify-self: center;
-
 
 }
 
@@ -358,6 +370,7 @@ justify-self: center;
 .birthday_single_form {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     
 }

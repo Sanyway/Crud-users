@@ -113,11 +113,12 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
           {/*------------------------------------------Last name----------------------------------------*/}
 
           <div className='edit_last'>
-            <h2 className={buttonStatus == 2 ? 'last_hide' : 'last_name'}>{user.last_name}</h2>
+            <div><h2 className={buttonStatus == 2 ? 'last_hide' : 'last_name'}>{user.last_name}</h2>
             <form className='last_single_form' onSubmit={handleSubmit(submit)}>
               <input className={buttonStatus == 2 ? 'last_form_edit' : 'last_edit_hide'} placeholder={`${user.last_name}`} type="text" id={user.id} {...register('last_name')} />
               <button className={buttonStatus == 2 ? 'last_update_button' : 'last_update_hide'}>Update</button>
             </form>
+            </div>
             <button onClick={() => editButton(2)} className={buttonStatus == 2 ? 'last_edit_hide' : 'last_edit_button'}>
               <i className="fa-solid fa-pen-to-square user_edit"></i>
             </button>
