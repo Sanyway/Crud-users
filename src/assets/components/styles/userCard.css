@@ -184,7 +184,7 @@ margin-top: 8px;
 
 .edit_last{
     margin-top: 5px;
-    width: 315px;
+    width: 320px;
     height: 25px;
     justify-content: space-between;
     display: flex;
@@ -197,6 +197,7 @@ margin-top: 8px;
     height: 25px;
     display: flex;
     justify-content: space-between;
+    width: 320px;
 }
 .last_hide,
 .last_edit_hide,
@@ -211,6 +212,8 @@ margin-top: 8px;
     height: 20px;
     width: 50px;
     opacity: 0.4;
+    
+   
 }
 
 .last_edit_button {
@@ -219,7 +222,7 @@ margin-top: 8px;
     font-size: 18px;
     width: 30px;
     opacity: 0.15;
-    margin-right: 5px;
+    margin-right: 15px;
     background-color: transparent;
     border: none;
     position: relative;
@@ -340,6 +343,7 @@ width: 315px;
 .birthday_form_edit {
 height: fit-content;
 justify-self: center;
+
 
 }
 
