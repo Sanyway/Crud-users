@@ -103,7 +103,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
             <h2 className={buttonStatus == 1 ? 'name_hide' : 'name_user'}>{`${user.first_name}`}</h2>
             <form className='name_single_form' onSubmit={handleSubmit(submit)}>
               <input className={buttonStatus == 1 ? 'name_form_edit' : 'name_edit_hide'} placeholder={`${user.first_name}`} type="text" id={user.id} {...register('first_name')} />
-              <button className={buttonStatus == 1 ? 'name_update_button' : 'name_update_hide'}>Update</button>
+              <button className={buttonStatus == 1 ? 'update_button' : 'name_update_hide'}>Update</button>
             </form>
             <button onClick={() => editButton(1)} className={buttonStatus == 1 ? 'name_edit_hide' : 'name_edit_button'}>
               <i className="fa-solid fa-pen-to-square user_edit"></i>
@@ -116,7 +116,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
             <div><h2 className={buttonStatus == 2 ? 'last_hide' : 'last_name'}>{user.last_name}</h2>
             <form className='last_single_form' onSubmit={handleSubmit(submit)}>
               <input className={buttonStatus == 2 ? 'last_form_edit' : 'last_edit_hide'} placeholder={`${user.last_name}`} type="text" id={user.id} {...register('last_name')} />
-              <button className={buttonStatus == 2 ? 'last_update_button' : 'last_update_hide'}>Update</button>
+              <button className={buttonStatus == 2 ? 'update_button' : 'last_update_hide'}>Update</button>
             </form>
             </div>
             <button onClick={() => editButton(2)} className={buttonStatus == 2 ? 'last_edit_hide' : 'last_edit_button'}>
@@ -135,7 +135,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
               <h2 className={buttonStatus == 3 ? 'email_hide' : 'email_name'}>{user.email}</h2>
               <form className='email_single_form' onSubmit={handleSubmit(submit)}>
                 <input className={buttonStatus == 3 ? 'email_form_edit' : 'email_edit_hide'} placeholder={`${user.email}`} type={buttonStatus ? 'email' : 'text'} id={user.id} {...register('email')} />
-                <button className={buttonStatus == 3 ? 'email_update_button' : 'email_update_hide'}>Update</button>
+                <button className={buttonStatus == 3 ? 'update_button' : 'email_update_hide'}>Update</button>
               </form>
             </div>
             <button onClick={() => editButton(3)} className={buttonStatus == 3 ? 'email_edit_hide' : 'email_edit_button'}>
@@ -153,7 +153,7 @@ const UserCard = ({ user, deleteUserById, setUpdateInfo, setFormIsOpen, updateUs
               <h2 className={buttonStatus == 4 ? 'birthday_hide' : 'birthday_name'}>{user.birthday}</h2>
               <form className='birthday_single_form' onSubmit={handleSubmit(submit)}>
                 <input className={buttonStatus == 4 ? 'birthday_form_edit' : 'birthday_edit_hide'} placeholder={`${user.birthday}`} type={buttonStatus ? 'date' : 'text'} id={user.id} {...register('birthday')} />
-                <button className={buttonStatus == 4 ? 'birthday_update_button' : 'birthday_update_hide'}>Update</button>
+                <button className={buttonStatus == 4 ? 'update_button' : 'birthday_update_hide'}>Update</button>
               </form>
             </div>
             <button onClick={() => editButton(4)} className={buttonStatus == 4 ? 'birthday_edit_hide' : 'birthday_edit_button'}>

@@ -124,6 +124,20 @@ margin-top: 8px;
 }
 
 
+.update_button {
+    margin-top: 5px;
+    height: 22px;
+    width: 55px;
+    background-color: rgb(109, 109, 212);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    
+    
+   
+}
+
 /*----------------Model Name--------------------*/
 
 .edit_user {
@@ -152,13 +166,6 @@ margin-top: 8px;
     justify-content: space-between;
 }
 
-.name_update_button {
-    margin-top: 5px;
-    height: 20px;
-    width: 50px;
-    opacity: 0.4;
-    
-}
 
 .name_edit_button {
     margin-top: 5px;
@@ -217,15 +224,6 @@ margin-top: 8px;
     display: none;
 }
 
-
-.last_update_button {
-    margin-top: 5px;
-    height: 20px;
-    width: 50px;
-    opacity: 0.4;
-    
-   
-}
 
 .last_edit_button {
     margin-top: 5px;
@@ -298,13 +296,6 @@ width: 315px;
     width: 150px;
 }
 
-.email_update_button {
-    margin-top: 5px;
-    height: 20px;
-    width: 50px;
-    opacity: 0.4;
-}
-
 .email_edit_button {
     margin-top: 5px;
     height: 20px;
@@ -374,13 +365,6 @@ justify-self: center;
     position: relative;
     
 }
-
-.birthday_update_button {
-    height: 20px;
-    width: 50px;
-    opacity: 0.4;
-}
-
 
 .birthday_edit_button {
     margin-top: 5px;
